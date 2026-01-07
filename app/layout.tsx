@@ -3,7 +3,7 @@ import './globals.css';
 import SmoothScroll from './SmoothScroll';
 
 export const metadata: Metadata = {
-  title: 'Your Name | Portfolio',
+  title: 'Portfolio',
   description: 'Developer portfolio built with Next.js, Tailwind CSS, and smooth scrolling.',
 };
 

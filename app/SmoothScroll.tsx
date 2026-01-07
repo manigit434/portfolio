@@ -10,7 +10,6 @@ export default function SmoothScroll({ children }: { children: React.ReactNode }
     const lenis = new Lenis({
       lerp: 0.08,        // lower = smoother
       smoothWheel: true,
-      smoothTouch: false,
     });
 
     const raf = (time: number) => {

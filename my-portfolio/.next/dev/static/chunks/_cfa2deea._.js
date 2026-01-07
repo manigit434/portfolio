@@ -21,8 +21,7 @@ function SmoothScroll({ children }) {
         "SmoothScroll.useEffect": ()=>{
             const lenis = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lenis$2f$dist$2f$lenis$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"]({
                 lerp: 0.08,
-                smoothWheel: true,
-                smoothTouch: false
+                smoothWheel: true
             });
             const raf = {
                 "SmoothScroll.useEffect.raf": (time)=>{
