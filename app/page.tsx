@@ -39,7 +39,7 @@ export default function Home() {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6, ease: 'easeOut' },
+      transition: { duration: 0.6, ease: 'easeOut' as const },
     },
   };
 
@@ -315,7 +315,7 @@ const statGradient: Record<string, string> = {
                 className="group aspect-square w-full bg-gradient-to-b from-slate-800/60 to-slate-900/60 backdrop-blur-xl p-8 rounded-3xl border border-slate-700/50 hover:border-purple-500/50 transition-all duration-500 shadow-2xl flex flex-col justify-center"
               >
                 <motion.div
-                  className={`text-4xl font-black bg-gradient-to-r from-${stat.color}-400 via-${stat.color}-500 to-${stat.color}-400 bg-clip-text text-transparent mb-4 group-hover:scale-110 transition-all duration-300`}
+                  className={`text-4xl font-black bg-gradient-to-r ${statGradient[stat.color]} bg-clip-text text-transparent mb-4 group-hover:scale-110 transition-all duration-300`}
                   animate={{ rotateY: [0, 5, 0] }}
                   transition={{ duration: 2, repeat: Infinity }}
                 >
@@ -384,7 +384,7 @@ const statGradient: Record<string, string> = {
             >
               <div className="flex items-center space-x-4 mb-6">
                 <motion.div
-                  className={`w-16 h-16 bg-gradient-to-r from-${skillGroup.color}-500 to-${skillGroup.color}-600 rounded-2xl flex items-center justify-center text-2xl shadow-2xl shadow-${skillGroup.color}-500/25 group-hover:scale-110 transition-all duration-300`}
+                  className={`w-16 h-16 bg-gradient-to-r ${statGradient[skillGroup.color]} rounded-2xl flex items-center justify-center text-2xl shadow-2xl group-hover:scale-110 transition-all duration-300`}
                   whileHover={{ rotate: 360 }}
                   transition={{ duration: 0.5 }}
                 >
