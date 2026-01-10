@@ -1,10 +1,9 @@
-import type { Metadata } from 'next';
-import './globals.css';
-import SmoothScroll from './SmoothScroll';
+import type { Metadata } from "next";
+import "./globals.css";
 
 export const metadata: Metadata = {
-  title: 'Portfolio',
-  description: 'Developer portfolio built with Next.js, Tailwind CSS, and smooth scrolling.',
+  title: "Portfolio",
+  description: "Developer portfolio built with Next.js and Tailwind CSS.",
 };
 
 export default function RootLayout({
@@ -14,9 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        <SmoothScroll>{children}</SmoothScroll>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
