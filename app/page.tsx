@@ -69,7 +69,7 @@ export default function Home() {
       tech: ['Cryptography', 'AES-GCM', 'ECC', 'Django'],
       live: 'https://secure-text-ecc.onrender.com',
       github: 'https://github.com/manigit434/secure-text-ecc',
-      status: 'complete',
+      status: 'live',
     },
   ];
 const statGradient: Record<string, string> = {
