@@ -63,12 +63,12 @@ export default function Home() {
       status: 'progress',
     },
     {
-      title: 'Elliptic Curve Encryption',
+      title: 'SecureText ECC',
       description:
-        'Efficient asymmetric encryption scheme using Elliptic Curve Cryptography.',
-      tech: ['Java', 'Cryptography', 'ECC', 'Math'],
-      live: '#',
-      github: 'https://github.com/manigit434',
+        'Zero-Trust secure messaging system using Elliptic Curve Cryptography (ECC) with AES-GCM encryption, admin re-authentication, and audit logging.',
+      tech: ['Cryptography', 'AES-GCM', 'ECC', 'Django'],
+      live: 'https://secure-text-ecc.onrender.com',
+      github: 'https://github.com/manigit434/secure-text-ecc',
       status: 'complete',
     },
   ];
