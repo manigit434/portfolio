@@ -298,8 +298,8 @@ const statGradient: Record<string, string> = {
           <motion.div variants={itemVariants} className="grid grid-cols-2 gap-6">
             {[
               { num: '3+', label: 'Projects', color: 'purple' },
-              { num: 'Java', label: 'Expert', color: 'pink' },
-              { num: 'DSA', label: 'Strong Foundation', color: 'indigo' },
+              { num: 'Java', label: 'Problem Solving', color: 'pink' },
+              { num: 'DSA', label: 'Core Concepts', color: 'indigo' },
               { num: '100+', label: 'LeetCode', color: 'emerald' },
             ].map((stat, index) => (
               <motion.div
@@ -367,7 +367,7 @@ const statGradient: Record<string, string> = {
             },
             {
               title: 'Tools',
-              skills: ['Git/GitHub', 'Next.js', 'Vercel'],
+              skills: ['Git/GitHub', 'Render', 'Vercel'],
               icon: '🔧',
               color: 'indigo',
             },
